@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #e9e9e9;
+  background: radial-gradient(1200px 800px at 50% -200px, #0b2145 0%, #040a17 65%, #000 100%);
+}
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.title {
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+.info {
+  opacity: 0.85;
+  font-size: 14px;
+}
+canvas {
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(3, 8, 24, 0.6), inset 0 0 0 2px rgba(255,255,255,0.06);
+}
+.controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #11326b;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #fff;
+  cursor: pointer;
+}
+.button:hover {
+  filter: brightness(1.1);
+}
+.scoreboard {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
